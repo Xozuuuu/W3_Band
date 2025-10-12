@@ -18,6 +18,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #nav {
@@ -95,16 +96,65 @@ html {
     color: #000;
 }
 
-#slide {
-    min-height: 500px;
-    background-color: aqua;
+/* Slider */
+
+#slider {
+    position: relative;
     margin-top: 46px;
+    padding-top: 50%;
+    background : url(../Img/2..jpg) top center / cover no-repeat; 
 }
 
-#content {
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#slider .text-heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#slider .text-description {
+    font-size: 24px;
+}
+/* End Slider */
+
+#content .content-section {
+    width: 800px;
+    padding : 64px 0;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
+#content .section-heading {
+    text-align: center;
+    font-size:30px ;
+    font-weight:lighter;
+    letter-spacing: 10px;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    margin: 25px 0;
+    opacity: 0.7;
+}
+
+#content .about-text {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
 #footer {
 
 }
