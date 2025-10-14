@@ -7,6 +7,14 @@
 html {
     font-family: sans-serif;
 }
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: white !important;
+}
 #main {
 
 }
@@ -102,7 +110,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background : url(../Img/2..jpg) top center / cover no-repeat; 
+    background : url(../Img/avatar/1.jpg) top center / cover no-repeat; 
 }
 
 #slider .text-content {
@@ -125,7 +133,7 @@ html {
     font-size: 24px;
 }
 /* End Slider */
-
+/* Content */
 #content .content-section {
     width: 800px;
     padding : 64px 0;
@@ -155,6 +163,130 @@ html {
     letter-spacing: 0.5px;
     line-height: 1.8;
 }
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-item{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 10px;
+}
+/* End Content */
+/* Tour */
+.tour-section {
+    background-color: #000000;
+}
+
+.ticket-lists {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.ticket-lists li {
+    list-style-type:none;
+    color : #757575;
+    font-size: 15px;
+    padding : 11px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ticket-lists .sold-out {
+    background-color: rgb(195, 60, 60);
+    color: white;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+.ticket-lists .sold-out:hover {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.ticket-lists .quantity {
+    float: right !important;
+    background-color: #000000;
+    width: 24px;
+    height: 24px;
+    margin-top: -2px;
+    color: white;
+    border-radius: 60%;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* Tickets */
+
+.places-list {
+    margin: 32px -8px 0;
+    padding-bottom: 50px;
+}
+
+.places-item {
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+
+.places-item img {
+    width: 100%;
+    height: 180px;
+    display: block;
+}
+
+.places-item img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.places-body {
+    background-color: #fff;
+    padding: 16px;
+}
+.places-item .places-heading {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.places-item .time {
+    margin-top:15px ;
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+.places-item .description {
+    margin-top: 15px;
+    list-style: 1.4;
+}
+
+.places-item .places-buy-btn {
+    text-decoration: none;
+    background-color: #000000;
+    padding : 8px 16px;
+    color : white;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.places-item .places-buy-btn:hover {
+    background-color: rgb(255, 2, 2);
+    cursor: pointer;
+}
+/* End Tickets */
+/* End Tour  */
 #footer {
 
 }
