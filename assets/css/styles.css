@@ -11,12 +11,26 @@ html {
 .clear {
     clear: both;
 }
+/* Common */
+
+.col {
+    float: left;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}
 
 .text-white {
     color: white !important;
-}
-#main {
-
 }
 
 #header {
@@ -77,10 +91,6 @@ html {
     color : #000;
 }
 
-#nav .nav-arrow-down {
-
-}
-
 #header .search-button {
     float: right;
     color : white;
@@ -92,9 +102,7 @@ html {
     cursor: pointer;
     background-color: red;
 }
-#header .search-icon {
 
-}
 .subnav li a {
     width: 150px;
 }
@@ -288,6 +296,54 @@ html {
 }
 /* End Tickets */
 /* End Tour  */
+/* Contact form */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i {
+    width: 50px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    /* width: 100%; */
+    padding: 10px;
+    border : 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form .form-control-2 {
+    width:96%;
+    padding: 10px;
+    border : 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #000000;
+    color: #fff;
+    border : none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    float : right;
+    margin-right: 18px;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: rgb(255, 2, 2);
+    cursor: pointer;
+}
 #footer {
 
 }
