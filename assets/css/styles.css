@@ -279,6 +279,7 @@ html {
     color : white;
     display: inline-block;
     margin-top: 20px;
+    border : none;
 }
 
 .places-item .places-buy-btn:hover {
@@ -315,6 +316,7 @@ html {
     position: relative;
     max-width: calc(100% - 64px); 
     /* thu thuat responsive */
+    animation: modalFadeIn 0.5s ease-out;
 }
 
 header.modal-header {
@@ -327,7 +329,7 @@ header.modal-header {
     font-size: 25px;
 }
 
-.fa-solid {
+.modal .fa-solid {
     margin-right: 10px;
 }
 
@@ -379,4 +381,15 @@ header.modal-header {
     padding: 20px;
     font-size: 14px;
     color: #757575;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -95,7 +95,7 @@
                                 <h3 class="places-heading">New York</h3>
                                 <p class="time">Tue 14 Oct 2025</p>
                                 <p class="description">Present the thickness that is in the ground to the stream of life</p>
-                                <a href="#" class="places-buy-btn">Buy Tickets</a>
+                                <button class="places-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="places-item">
@@ -104,7 +104,7 @@
                                 <h3 class="places-heading">Paris</h3>
                                 <p class="time">Tue 15 Oct 2025</p>
                                 <p class="description">Present the thickness that is in the ground to the stream of life</p>
-                                <a href="#" class="places-buy-btn">Buy Tickets</a>
+                                <button class="places-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="places-item">
@@ -113,7 +113,7 @@
                                 <h3 class="places-heading">San Francisco</h3>
                                 <p class="time">Tue 16 Oct 2025</p>
                                 <p class="description">Present the thickness that is in the ground to the stream of life</p>
-                                <a href="#" class="places-buy-btn">Buy Tickets</a>
+                                <button class="places-buy-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -170,5 +170,31 @@
             </footer>
         </div>
     </div>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket');
+        const modal = document.querySelector('.modal');
+        const modalClose = document.querySelector('.modal-close');
+        // ham hien thi modal class open mua ve
+        function showBuyTickets(){
+            modal.classList.add('open');
+        }
+        // ham an modal class open mua ve
+        function hideBuyTickets(){
+            modal.classList.remove('open');
+        }
+        // lap su kien cho tung button mua ve
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener('click', showBuyTickets);
+        }
+        // lap su kien cho button close
+        modalClose.addEventListener('click', hideBuyTickets);
+
+        modal.addEventListener('click', hideBuyTickets);
+        // chan su kien an modal khi click vao ben trong modal-container
+        const modalContainer = document.querySelector('.modal-container');
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation();
+        })
+    </script>
 </body>
 </html>
