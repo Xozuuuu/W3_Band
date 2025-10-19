@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>The Band</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Img/avatar/3.jpg">
 </head>
 <body>
     <div id="main">
         <div id="header">
             <!-- Begin : Nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#social">Social</a></li>
                 <li>
                     <a href="#">More
                         <i class="nav-arrow-down fa-solid fa-angle-down"></i> 
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -45,7 +47,7 @@
             <!-- End Slider -->
             <!-- Begin : Content -->
         <div id="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love Music</p>
                 <p class="about-text">
@@ -76,7 +78,7 @@
                 </div>
             </div>
             <!-- Begin : Tour section -->
-             <div class="tour-section">
+             <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading  text-white">TOUR DATES</h2>
                     <p class="section-sub-heading  text-white">Remember to book your tickets</p>
@@ -124,7 +126,7 @@
             <!-- End : Tour section -->
             
             <!-- Begin : Tour contact -->
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Get in touch with us</p>
 
@@ -138,15 +140,15 @@
                         <form action="">
                             <div class="row">
                                 <div class="col col-half">
-                                    <input type="text" name="Name" placeholder="Name" id="" class="form-control">
+                                    <input type="text" required name="Name" placeholder="Name" id="" class="form-control">
                                 </div>
                                 <div class="col col-half">
-                                    <input type="text" name="Email" placeholder="Email" id="" class="form-control">
+                                    <input type="text" required name="Email" placeholder="Email" id="" class="form-control">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col col-full">
-                                    <input type="text" name="Message" placeholder="Message" id="" class="form-control-2">
+                                    <input type="text" required name="Message" placeholder="Message" id="" class="form-control-2">
                                 </div>
                             </div>
                             <input type="submit" value="SEND" class="form-submit-btn"> 
@@ -157,9 +159,23 @@
             </div>
             <!-- End : Tour contact -->
         </div>
+
+        <div class="map-section">
+            <img src="./assets/Img/places/map.jpg" alt="">
+        </div>
             <!-- End : Content -->
         <div id="footer">
-
+            <div id="social" class="socials-list">
+                <a href="#" class="social-item"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-item"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-item"><i class="fa-brands fa-snapchat"></i></a>
+                <a href="#" class="social-item"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#" class="social-item"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-item"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="copyright-footer">
+                Powered by <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a>
+            </div>
         </div>
 
     </div>

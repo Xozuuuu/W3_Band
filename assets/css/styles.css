@@ -5,6 +5,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: sans-serif;
 }
 
@@ -32,6 +33,14 @@ html {
 .text-white {
     color: white !important;
 }
+
+.map-section img {
+    width: 100%;
+    display: block;
+    margin-top: 48px;
+
+}
+
 
 #header {
     height: 46px;
@@ -437,6 +446,37 @@ header.modal-header {
     padding: 20px;
     font-size: 14px;
     color: #757575;
+}
+
+/*  */
+
+#footer {
+    padding : 64px 16px;
+    text-align: center;
+}
+
+.socials-list {
+    font-size: 20px;
+}
+
+#footer .socials-list a {
+    display: inline-block;
+    margin: 0 10px;
+    color : #757575;
+}
+
+#footer .socials-list a:hover {
+    color : #000;
+}
+
+#footer .copyright-footer {
+    font-size: 14px;
+    color : #757575;
+    margin: 15px 0;
+}
+
+.copyright-footer a {
+    color : #757575;
 }
 
 @keyframes modalFadeIn {
