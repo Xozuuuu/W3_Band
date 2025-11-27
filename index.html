@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>The Band</title>
     <link rel="icon" type="image/x-icon" href="./assets/Img/avatar/3.jpg">
@@ -34,6 +35,10 @@
             <!-- Begin : Search -->
             <div class="search-button">
                 <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-bars-btn">
+                <i class="mobile-bars-icon fa-solid fa-bars"></i>
             </div>
             <!-- End : Search -->
         </div>
@@ -238,6 +243,33 @@
         modalContainer.addEventListener('click', function(event){
             event.stopPropagation();
         })
+    </script>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight
+        
+        // Open / Close menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed ){
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // Auto Close while choose option
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for ( var i = 0 ; i < menuItems.length;i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+
+        }
     </script>
 </body>
 </html>
