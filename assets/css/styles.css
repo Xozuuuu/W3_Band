@@ -41,6 +41,16 @@ html {
 
 }
 
+.mt-8 {
+    margin-top : 8px;
+}
+
+.mt-16 {
+    margin-top:16px;
+}
+
+
+
 
 #header {
     height: 46px;
@@ -266,7 +276,7 @@ html {
 /* Tickets */
 
 .places-list {
-    margin: 32px -8px 0;
+    margin: 16px -8px 0;
     padding-bottom: 50px;
 }
 
@@ -334,8 +344,18 @@ html {
 }
 
 .contact-info i {
-    width: 50px;
+    /* width: 50px; */
     display: inline-block;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: rgb(43, 97, 203);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color : red;
 }
 
 .contact-form {
@@ -347,11 +367,11 @@ html {
     padding: 10px;
     border : 1px solid #ccc;
     border-radius: 4px;
-    width: 92%;
+    width: 100%;
 }
 
 .contact-form .form-control-2 {
-    width:96%;
+    width:100%;
     padding: 10px;
     border : 1px solid #ccc;
     border-radius: 4px;
@@ -365,13 +385,14 @@ html {
     padding: 10px 20px;
     margin-top: 20px;
     float : right;
-    margin-right: 18px;
+    /* margin-right: 18px; */
 }
 
 .contact-form .form-submit-btn:hover {
     background-color: rgb(255, 2, 2);
     cursor: pointer;
 }
+
 #footer {
 
 }
